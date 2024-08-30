@@ -9,7 +9,7 @@ const Hero = () => {
   return (
     <div className="h-screen pb-20 pt-36">
       <div>
-        <div className="z-20">
+        <div>
           <Spotlight
             className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen"
             fill="white"
@@ -24,7 +24,7 @@ const Hero = () => {
         <Boxes className="h-screen z-[0] fixed opacity-35" />
       </div>
       <div className="flex justify-center relative my-20">
-        <div className="max-w-[89vw] z-20 md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
+        <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
           <h2 className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-3xl">
             Dynamic Web Development with Next.js and more
           </h2>
