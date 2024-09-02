@@ -1,22 +1,10 @@
-"use client";
-
-import React, { useEffect, useRef } from "react";
-import { gsap } from "gsap";
-import { Spotlight } from "./ui/Spotlight";
-import { Boxes } from "./ui/BackgroundBoxes";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import MagicButton from "./ui/MagicButton";
 import { FaLocationArrow } from "react-icons/fa6";
 
 const Hero = () => {
-  const heroRef = useRef(null);
-
-  useEffect(() => {
-    gsap.fromTo(heroRef.current, { opacity: 0 }, { opacity: 1, duration: 1.5 });
-  }, []);
-
   return (
-    <div ref={heroRef} className="h-screen pb-20">
+    <div className="h-screen pb-20">
       <div className="flex justify-center relative mb-20 h-screen">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
           <h2 className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-3xl z-20">
