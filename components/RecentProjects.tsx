@@ -1,7 +1,8 @@
 import { projects } from "@/data";
 import React from "react";
-import { FaLocationArrow } from "react-icons/fa6";
+import { FaLocationCrosshairs } from "react-icons/fa6";
 import dynamic from "next/dynamic";
+import Image from "next/image";
 
 const PinContainer = dynamic(
   () => import("./ui/3dPin").then((mod) => mod.PinContainer),
@@ -24,9 +25,9 @@ const RecentProjects = () => {
             <PinContainer title={link} href={link}>
               <div className="relative flex items-center justify-center sm:w-[570px] w-[80vw] overflow-hidden sm:h-[40vh] h-[30vh] mb-10 ">
                 <div className="relative w-full h-full overflow-hidden lg:rounded-3xl bg-[#13162d]">
-                  <img src="/bg.png" alt="bg-img" />
+                  <Image src="/bg.png" alt="bg-img" width={20} height={20} className="w-full h-full lg:rounded-3xl"/>
                 </div>
-                <img src={img} alt={title} className="z-10 absolute bottom-0" />
+                <Image src={img} alt={title} width={20} height={20} className="z-10 absolute top-0 w-full h-full lg:rounded-3xl" />
               </div>
               <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
                 {title}
@@ -42,13 +43,13 @@ const RecentProjects = () => {
                     style={{
                       transform:`translateX(-${5 * index * 2}px)`
                       }}>
-                      <img src={icon} alt={icon} className="p-2" />
+                      <Image src={icon} alt={icon} height={600} width={600} className="p-2 w-full h-full" />
                     </div>
                   ))}
                 </div>
                 <div className="flex justify-center items-center">
                   <p className="flex lg:text-xl md:text-xs text-sm text-purple">Check live site</p>
-                  <FaLocationArrow className="ms-3" color="#cbacf9" />
+                  <FaLocationCrosshairs className="ms-3" color="#cbacf9" />
                 </div>
               </div>
             </PinContainer>

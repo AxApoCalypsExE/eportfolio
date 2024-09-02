@@ -10,11 +10,12 @@ const Approach = () => {
       <h1 className="heading">
         My <span className="text-purple">approach</span>
       </h1>
+      <p className="text-center mt-4 text-lg uppercase tracking-widest">With 3 simple &quot;Ph<span className="text-purple">ace</span>s&quot;</p>
       <div className="my-20 flex flex-col lg:flex-row items-center justify-center gap-4">
         <Card
-          title="Planning & Strategy"
-          icon={<AceternityIcon order="Phase 1" />}
-          description="We'll collaborate to map out your website's goals, target audience, and key functionalities. We'll discuss things like site structure, navigation, and content requirements."
+          title="Discovery & Strategy"
+          icon={<AceternityIcon order="Phace 1" />}
+          description="We'll start by nailing down your goals and vision. I'll work closely with you to define the site's purpose, audience, and key functionalities. Together, we'll craft a strategy that sets us up to ace the project from the get-go."
         >
           <CanvasRevealEffect
             animationSpeed={5.1}
@@ -22,9 +23,9 @@ const Approach = () => {
           />
         </Card>
         <Card
-          title="Development & Progress Update"
-          icon={<AceternityIcon order="Phase 2" />}
-          description="Once we agree on the plan, I cue my lofi playlist and dive into coding. From initial sketches to polished code, I keep you updated every step of the way."
+          title="Design & Development"
+          icon={<AceternityIcon order="Phace 2" />}
+          description="With a clear strategy in place, I’ll jump into development, making sure to ace every line of code. I’ll keep you updated throughout the process, ensuring that the site reflects your vision and functions flawlessly."
         >
           <CanvasRevealEffect
             animationSpeed={3}
@@ -37,9 +38,9 @@ const Approach = () => {
           />
         </Card>
         <Card
-          title="Development & Launch"
-          icon={<AceternityIcon order="Phase 3" />}
-          description="This is where the magic happens! Based on the approved design, I'll translate everything into functional code, building your website from the ground up."
+          title="Review & Launch"
+          icon={<AceternityIcon order="Phace 3" />}
+          description="When it’s time to go live, we’ll ace the launch with a smooth transition. I’ll make sure your site is ready to impress from day one, and I’ll be on hand for any post-launch support to keep everything running at its best."
         >
           <CanvasRevealEffect
             animationSpeed={3}
@@ -91,11 +92,11 @@ const Card = ({
         <div className="text-center group-hover/canvas-card:-translate-y-4 absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] group-hover/canvas-card:opacity-0 transition duration-200 w-full mx-auto flex items-center justify-center">
           {icon}
         </div>
-        <h2 className="dark:text-white text-3xl opacity-0 group-hover/canvas-card:opacity-100 relative z-10 text-black mt-4  font-bold group-hover/canvas-card:text-white group-hover/canvas-card:-translate-y-2 transition duration-200 text-center">
+        <h2 className="dark:text-white text-xl opacity-0 group-hover/canvas-card:opacity-100 relative z-10 text-black mt-4 font-bold group-hover/canvas-card:text-white group-hover/canvas-card:-translate-y-2 transition duration-200 text-center">
           {title}
         </h2>
         <h2
-          className="dark:text-white text-sm opacity-0 group-hover/canvas-card:opacity-100 relative z-10 text-black mt-4  font-bold group-hover/canvas-card:text-white group-hover/canvas-card:-translate-y-2 transition duration-200 text-center"
+          className="dark:text-white text-2xl opacity-0 group-hover/canvas-card:opacity-100 relative z-10 text-black mt-4 font-bold group-hover/canvas-card:text-white group-hover/canvas-card:-translate-y-2 transition duration-200 text-center"
           style={{ color: "#e5ecff" }}
         >
           {description}

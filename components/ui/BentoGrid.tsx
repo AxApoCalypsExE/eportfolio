@@ -5,9 +5,10 @@ import { BackgroundGradientAnimation } from "./GradientBg";
 import { GlobeDemo } from "./GridGlobe";
 import Lottie from "react-lottie";
 import { useState } from "react";
-import animationData from "@/data/confetti.json"
+import animationData from "@/data/confetti.json";
 import MagicButton from "./MagicButton";
 import { IoCopyOutline } from "react-icons/io5";
+import Image from "next/image";
 
 export const BentoGrid = ({
   className,
@@ -52,8 +53,12 @@ export const BentoGridItem = ({
   const handleCopy = () => {
     navigator.clipboard.writeText("me@acecorrea.dev");
 
-    setCopied(true)
-  }
+    setCopied(true);
+
+    setTimeout(() => {
+      setCopied(false);
+    }, 3000);
+  };
 
   return (
     <div
@@ -70,10 +75,12 @@ export const BentoGridItem = ({
       <div className={`${id === 6 && "flex justify-center"} h-full`}>
         <div className="w-full h-full absolute">
           {img && (
-            <img
+            <Image
               src={img}
               alt={img}
-              className={cn(imgClassName, "object-cover object-center")}
+              width={600}
+              height={600}
+              className={cn(imgClassName, "object-cover object-center h-full w-full")}
             />
           )}
         </div>
@@ -83,9 +90,11 @@ export const BentoGridItem = ({
           }`}
         >
           {spareImg && (
-            <img
+            <Image
               src={spareImg}
               alt={spareImg}
+              width={600}
+              height={600}
               className={"object-cover object-center w-full h-full"}
             />
           )}
@@ -115,7 +124,7 @@ export const BentoGridItem = ({
                 {["React.js", "Next.js", "Typescript"].map((item) => (
                   <span
                     key={item}
-                    className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E]"
+                    className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E] text-gray-400"
                   >
                     {item}
                   </span>
@@ -127,7 +136,7 @@ export const BentoGridItem = ({
                 {["Shadcn", "Convex", "Tailwindcss"].map((item) => (
                   <span
                     key={item}
-                    className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E]"
+                    className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E] text-gray-400"
                   >
                     {item}
                   </span>
@@ -139,14 +148,16 @@ export const BentoGridItem = ({
           {id === 6 && (
             <div className="mt-5 relative">
               <div className={`absolute -bottom-5 right-0`}>
-                <Lottie options={{
-                  loop: copied,
-                  autoplay: copied,
-                  animationData,
-                  rendererSettings: {
-                    preserveAspectRatio: "xMidYmid slice",
-                  }
-                }} />
+                <Lottie
+                  options={{
+                    loop: copied,
+                    autoplay: copied,
+                    animationData,
+                    rendererSettings: {
+                      preserveAspectRatio: "xMidYmid slice",
+                    },
+                  }}
+                />
               </div>
               <MagicButton
                 title={copied ? "Email copied" : "Copy my email"}
