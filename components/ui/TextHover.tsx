@@ -64,6 +64,8 @@ export const TextHoverEffect = ({
           r="20%"
           animate={maskPosition}
           transition={{ duration: duration ?? 0, ease: "easeOut" }}
+          cx={10}
+          cy={10}
         >
           <stop offset="0%" stopColor="white" />
           <stop offset="100%" stopColor="black" />
