@@ -62,14 +62,15 @@ export const TextHoverEffect = ({
           id="revealMask"
           gradientUnits="userSpaceOnUse"
           r="20%"
+          cx={maskPosition?.cx || "50%"}
+          cy={maskPosition?.cy || "50%"}
           animate={maskPosition}
           transition={{ duration: duration ?? 0, ease: "easeOut" }}
-          cx={10}
-          cy={10}
         >
           <stop offset="0%" stopColor="white" />
           <stop offset="100%" stopColor="black" />
         </motion.radialGradient>
+
         <mask id="textMask">
           <rect
             x="0"
@@ -100,7 +101,11 @@ export const TextHoverEffect = ({
         dominantBaseline="middle"
         strokeWidth="0.5"
         className="font-[helvetica] font-bold fill-transparent text-7xl stroke-neutral-200 dark:stroke-neutral-800"
-        initial={{ strokeDashoffset: 1000, strokeDasharray: 1000, opacity: 0.2 }}
+        initial={{
+          strokeDashoffset: 1000,
+          strokeDasharray: 1000,
+          opacity: 0.2,
+        }}
         animate={{
           strokeDashoffset: 0,
           strokeDasharray: 1000,

@@ -11,8 +11,6 @@ import RecentProjects from "@/components/RecentProjects";
 import Start from "@/components/Start";
 import { FloatingNav } from "@/components/ui/FloatingNav";
 import { navItems } from "@/data";
-import { FaHome } from "react-icons/fa";
-import { Boxes } from "@/components/ui/BackgroundBoxes";
 
 export default function Home() {
   const [showContent, setShowContent] = useState<boolean>(false);

@@ -76,7 +76,7 @@ export const projects = [
     des: "Developed a Notion-style editor using React.js, Firebase, and TailwindCSS with real-time database integration, file management, and secure user authentication.",
     img: "/p1.svg",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "https://github.com/adrianhajdin?tab=repositories",
+    link: "https://aicia-note-app.vercel.app/",
   },
   {
     id: 2,
@@ -84,7 +84,7 @@ export const projects = [
     des: "Developed a comprehensive financial SaaS platform using Next.js, TypeScript, and TailwindCSS, integrating Plaid and Dwolla APIs for secure transactions and real-time financial data visualization.",
     img: "/p2.svg",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/dwolla.svg"],
-    link: "https://github.com/adrianhajdin/zoom-clone",
+    link: "https://corenell-bank-and-finance-app.vercel.app/",
   },
   {
     id: 3,
@@ -92,15 +92,15 @@ export const projects = [
     des: "Developed a Netflix-inspired anime streaming companion app using React.js, Next.js, and TailwindCSS, featuring dynamic carousels, personalized anime lists, and interactive animations powered by GSAP and Embla Carousel.",
     img: "/p3.svg",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "https://github.com/adrianhajdin/ai_saas_app",
+    link: "https://animace.vercel.app/",
   },
   {
     id: 4,
-    title: "Animated Apple Iphone 3D Website",
+    title: "Animated Apple iPhone 3D Website",
     des: "Engineered an interactive iPhone UI/UX clone using React.js, TailwindCSS, GSAP, and Three.js, featuring 3D model displays and seamless animations to enhance user engagement and accessibility.",
     img: "/p4.svg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "https://github.com/adrianhajdin/iphone",
+    link: "https://ace-internship.vercel.app/",
   },
 ];
 
