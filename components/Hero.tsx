@@ -13,7 +13,7 @@ const Hero = () => {
           <TextGenerateEffect
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
             words="The Ace up your sleeve for your next Web Project"
-            duration={3}
+            duration={0.5}
           />
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl z-20">
             Hi, I&apos;m Ace Correa, a Frontend Software Developer based in
