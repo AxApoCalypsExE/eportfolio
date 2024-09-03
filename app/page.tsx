@@ -15,7 +15,7 @@ import { FaHome } from "react-icons/fa";
 import { Boxes } from "@/components/ui/BackgroundBoxes";
 
 export default function Home() {
-  const [showContent, setShowContent] = useState<boolean>(true);
+  const [showContent, setShowContent] = useState<boolean>(false);
 
   return (
     <main
