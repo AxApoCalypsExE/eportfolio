@@ -5,6 +5,13 @@ import { socialMedia } from "@/data";
 import { AnimatedTooltip } from "./ui/AnimatedTooltip";
 
 const Footer = () => {
+  const handleEmailClick = () => {
+    window.open(
+      "https://mail.google.com/mail/?view=cm&fs=1&to=me@acecorrea.dev",
+      "_blank"
+    );
+  };
+
   return (
     <footer className="w-full pb-10 mb-[100px] md:mb-5" id="contact">
       <div className="flex flex-col items-center gap-4">
@@ -16,13 +23,14 @@ const Footer = () => {
           Reach out to me today and let us discuss how I can help you achieve
           your goals.
         </p>
-        <a href="mailto:me@acecorrea.dev">
+        <div>
           <MagicButton
             title="Contact me :)"
             icon={<FaLocationArrow />}
             position="right"
+            handleClick={handleEmailClick}
           />
-        </a>
+        </div>
       </div>
       <div className="flex mt-16 md:flex-row flex-col justify-between items-center">
         <p className="md:text-base text-sm md:font-normal font-light">

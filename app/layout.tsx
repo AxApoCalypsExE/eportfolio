@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Ace's Portfolio",
-  description: "A website that aces your expectations ',:)",
+  description: "A website portfolio that will ace your expectations ',:)",
 };
 
 export default function RootLayout({
@@ -17,8 +17,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/AC.png" type="image/png" />
+        <link rel="apple-touch-icon" href="/AC.png" />
+      </head>
       <body className={inter.className}>
-        {" "}
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"

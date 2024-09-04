@@ -18,9 +18,11 @@ const Hero = () => {
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl z-20">
             Hi, I&apos;m Ace Correa, a Frontend Software Developer based in
             <br />
-            <span className="line-through text-gray-400">England</span>{" "}
-            <span className="line-through text-gray-400">Germany</span>{" "}
-            Philippines.
+            <span className="line-through text-gray-400">
+              England (2021)
+            </span>{" "}
+            <span className="line-through text-gray-400">Germany (2022)</span>{" "}
+            Philippines (2024).
           </p>
           <a href="#about" className="z-20">
             <MagicButton
