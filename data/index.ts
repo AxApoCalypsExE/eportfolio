@@ -100,7 +100,7 @@ export const projects = [
     des: "Engineered an interactive iPhone UI/UX clone using React.js, TailwindCSS, GSAP, and Three.js, featuring 3D model displays and seamless animations to enhance user engagement and accessibility.",
     img: "/p4.svg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "https://ace-internship.vercel.app/",
+    link: "https://iphone-ui-ux-clone.vercel.app/",
   },
 ];
 
