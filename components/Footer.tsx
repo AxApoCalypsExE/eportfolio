@@ -38,6 +38,7 @@ const Footer = () => {
         </p>
         <div className="flex items-center md:gap-3 gap-6">
           <AnimatedTooltip items={socialMedia} />
+          <a href="/Ace Correa's Certificate.pdf" className="hidden"></a>
         </div>
       </div>
     </footer>
