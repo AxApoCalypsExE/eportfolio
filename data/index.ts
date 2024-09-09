@@ -241,9 +241,9 @@ export const socialMedia = [
   {
     id: 2,
     name: "My Portfolio",
-    designation: "/aces_portfolio",
+    designation: "/aces_resume",
     image: "/pdf.svg",
-    url: "https://github.com/AxApoCalypsExE"
+    url: "/Ace's Resume.docx.pdf"
   },
   {
     id: 3,
