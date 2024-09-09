@@ -18,7 +18,18 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/AC.png" type="image/png" />
+        <link
+          rel="icon"
+          href="/AC.png"
+          type="image/png"
+          media="(prefers-color-scheme: dark)"
+        />
+        <link
+          rel="icon"
+          href="/ace logo white.svg"
+          type="image/png"
+          media="(prefers-color-scheme: light)"
+        />
         <link rel="apple-touch-icon" href="/AC.png" />
       </head>
       <body className={inter.className}>
