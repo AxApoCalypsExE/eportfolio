@@ -6,7 +6,7 @@ import { Boxes } from "./ui/BackgroundBoxes";
 const Grid = () => {
   return (
     <section className="py-20" id="about">
-      <Boxes className="h-screen fixed opacity-35" />
+      <Boxes className="h-screen fixed opacity-35 hidden lg:block" />
       <BentoGrid>
         {gridItems.map(
           ({
