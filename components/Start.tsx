@@ -20,7 +20,7 @@ const Start: React.FC<StartProps> = ({ onAnimationComplete }) => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 3000);
+    }, 0);
 
     return () => clearTimeout(timer);
   }, []);
