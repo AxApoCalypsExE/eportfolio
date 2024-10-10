@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <div className="h-screen pb-20">
       <div className="flex justify-center relative mb-20 h-screen">
-        <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
+        <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[64vw] flex flex-col items-center justify-center">
           <h2 className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-3xl z-20">
             Dynamic Web Development with Next.js and more
           </h2>
@@ -15,15 +15,11 @@ const Hero = () => {
             words="The Ace up your sleeve for your next Web Project"
             duration={0.5}
           />
-          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl z-20">
-            Hi, I&apos;m Ace Correa, a Frontend Software Developer based in
+          <p className="text-center md:tracking-wider mb-4 text-lg md:text-xl lg:text-3xl z-20">
+            Hi, I&apos;m <span className="text-purple">Ace Correa</span>, a Frontend Software Developer based in
             <br />
-            <span className="line-through text-gray-400">
-              England (2021)
-            </span>{" "}
-            <span className="line-through text-gray-400">Germany (2022)</span>{" "}
-            Philippines (2024).
           </p>
+          <p className="text-lg md:text-xl lg:text-3xl">London, England</p>
           <a href="#about" className="z-20">
             <MagicButton
               title="Show my work"
