@@ -243,7 +243,7 @@ export const socialMedia = [
     name: "My Portfolio",
     designation: "/aces_resume",
     image: "/pdf.svg",
-    url: "/Ace's Resume.docx.pdf"
+    url: "/AcesResume.pdf"
   },
   {
     id: 3,
