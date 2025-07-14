@@ -34,11 +34,11 @@ const Footer = () => {
       </div>
       <div className="flex mt-16 md:flex-row flex-col justify-between items-center">
         <p className="md:text-base text-sm md:font-normal font-light">
-          Copyright &copy; 2024 Ace Correa
+          Copyright &copy; 2025 Ace Correa
         </p>
         <div className="flex items-center md:gap-3 gap-6">
           <AnimatedTooltip items={socialMedia} />
-          <a href="/Ace Correa's Certificate.pdf" className="hidden"></a>
+          <a href="/AcesResume.pdf" className="hidden"></a>
         </div>
       </div>
     </footer>
